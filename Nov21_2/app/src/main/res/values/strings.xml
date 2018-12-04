@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Nov21_2</string>
+    <string name="sub">SUB Activity</string>
+    <string name="name">
+        WHAT\'S YOUR NAME?
+    </string>
+    <string name="age">HOW OLD ARE YOU?</string>
+    <string name="hobby">WHAT\'S YOUR HOBBY?</string>
+    <string name="answer">답안 작성</string>
+    <string name="done">답안 작성 완료</string>
+    <string name="seonjk">13050037 선종균</string>
+    <string name="noImage">이미지를 불러오지 못했습니다.</string>
+    <string name="insert">답안을 작성해주세요.</string>
+</resources>

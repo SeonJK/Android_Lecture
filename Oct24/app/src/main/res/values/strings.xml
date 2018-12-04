@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Oct24</string>
+    <string name="button">lap time</string>
+    <string name="sec">0</string>
+    <string name="mSec">00</string>
+
+</resources>

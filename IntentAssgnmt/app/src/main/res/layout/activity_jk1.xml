@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JK1Activity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="5dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="306dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BackToMain"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/JK1A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/text3"
+            app:layout_constraintTop_toBottomOf="@+id/text3"
+            tools:ignore="LabelFor">
+
+            <EditText
+                android:id="@+id/text1"
+                android:layout_width="193dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="110dp"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/Name"
+                app:layout_constraintBottom_toTopOf="@+id/text4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/text2"
+                android:layout_width="192dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="1dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="@string/passwd"
+                app:layout_constraintBottom_toTopOf="@+id/text3"
+                app:layout_constraintEnd_toEndOf="@+id/text3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+            <EditText
+                android:id="@+id/text3"
+                android:layout_width="192dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="7dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="@string/email"
+                app:layout_constraintBottom_toTopOf="@+id/text4"
+                app:layout_constraintEnd_toEndOf="@+id/text4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+            <EditText
+                android:id="@+id/text4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="21dp"
+                android:layout_marginEnd="1dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="@string/pnumber"
+                app:layout_constraintBottom_toTopOf="@+id/text5"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+            <EditText
+                android:id="@+id/text5"
+                android:layout_width="192dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="13dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/major"
+                app:layout_constraintBottom_toTopOf="@+id/text6"
+                app:layout_constraintEnd_toEndOf="@+id/text6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+            <EditText
+                android:id="@+id/text6"
+                android:layout_width="192dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="27dp"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:text="@string/stdnum"
+                app:layout_constraintBottom_toTopOf="@+id/text7"
+                app:layout_constraintEnd_toEndOf="@+id/text7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text5" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginTop="198dp"
+                app:layout_constraintBottom_toTopOf="@+id/text7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/gr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/grade1" />
+
+                <RadioButton
+                    android:id="@+id/gr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/grade2" />
+
+                <RadioButton
+                    android:id="@+id/gr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/grade3" />
+
+                <RadioButton
+                    android:id="@+id/gr4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/grade4" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/text7"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="1dp"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/birthday"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

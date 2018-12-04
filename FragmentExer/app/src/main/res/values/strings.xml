@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FragmentExer</string>
+    <string name="btn1">Frag1</string>
+    <string name="btn2">Frag2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tlist">LIST</string>
+    <string name="tvideo">VIDEO</string>
+    <string name="tcommu">COMMUNITY</string>
+</resources>

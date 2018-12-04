@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JK2Activity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintGuide_begin="5dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="306dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="94dp"
+        android:text="@string/BackToMain"
+        app:layout_constraintEnd_toStartOf="@+id/buy"
+        app:layout_constraintStart_toEndOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/JK2A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="54dp"
+        android:text="@string/price"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cart"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buy"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buy"
+        android:layout_width="69dp"
+        android:layout_height="49dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toStartOf="@+id/cart"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3"
+        app:srcCompat="@drawable/buy" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="133dp"
+                android:text="@string/galayxy"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn3"
+                app:layout_constraintStart_toStartOf="@+id/btn2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:text="@string/button8"
+                app:layout_constraintBottom_toBottomOf="@+id/btn2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn2" />
+
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/StringValue"
+                app:layout_constraintBottom_toTopOf="@+id/btn3"
+                app:layout_constraintEnd_toStartOf="@+id/btn1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/galaxy" />
+            <!--app:srcCompat="@"-->
+
+
+            <CheckBox
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="93dp"
+                android:layout_weight="1"
+                android:text="@string/chbox1"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/btn7"
+                app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/insurText"
+                app:layout_constraintEnd_toEndOf="@+id/btn7"
+                app:layout_constraintStart_toStartOf="@+id/btn6"
+                app:layout_constraintTop_toBottomOf="@+id/btn6">
+
+                <RadioButton
+                    android:id="@+id/btn4"
+                    android:layout_width="291dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rdbtn1"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="137dp" />
+
+                <RadioButton
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rdbtn2"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteY="168dp" />
+
+            </RadioGroup>
+
+
+            <CheckBox
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/chbox2"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+            <TextView
+                android:id="@+id/insurText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/insur"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/btn8"
+                app:layout_constraintEnd_toStartOf="@+id/btn7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+            <ToggleButton
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="33dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/tgbtn"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/insurText"
+                app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+            <Switch
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/swchbtn"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insurText" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
