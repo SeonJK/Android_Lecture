@@ -22,7 +22,6 @@
             android:id="@+id/recBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="recordAudio"
             android:text="@string/recording"
             tools:layout_editor_absoluteX="236dp"
             tools:layout_editor_absoluteY="78dp" />
@@ -39,16 +38,9 @@
             android:id="@+id/stopBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="stopAudio"
             android:text="@string/stop"
             tools:layout_editor_absoluteX="148dp"
             tools:layout_editor_absoluteY="78dp" />
     </LinearLayout>
-
-    <VideoView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/videoView"/>
-
 
 </android.support.constraint.ConstraintLayout>
